@@ -1,0 +1,134 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+
+body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
+      background: #080808;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.container {
+      padding: 20px;
+      border-radius: 20px;
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 4px 30px rgba(197, 88, 143, 0.7) inset;
+      position: absolute;
+      bottom: 200px;
+}
+
+.title {
+      font-size: 30px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 800;
+      padding: auto;
+      background: #65c4ff41;
+      color: #fff;
+      border-radius: 10px;
+}
+
+.clock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+}
+
+.clock div {
+      margin: 10px;
+}
+
+.clock span {
+      font-size: 36px;
+      font-weight: bold;
+      color: #fff;
+}
+
+.hour,
+.minutes,
+.seconds {
+      background: transparent;
+}
+
+.text {
+      font-size: 18px;
+      color: #ffffff;
+}
+
+#am-pm {
+      font-size: 24px;
+      color: #ff8800;
+      background: transparent;
+      padding: 0.5rem;
+      position: relative;
+      right: 10px;
+}
+
+.dot {
+      font-size: 9px;
+      position: absolute;
+      top: 57.6%;
+      margin: 0 1px 0 5px;
+      color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+
+      .container {
+            width: 100%;
+            margin: 0;
+      }
+
+      .clock span {
+            font-size: 28px;
+      }
+
+      .hour,
+      .minutes,
+      .seconds {
+            padding: 1.5rem;
+      }
+
+      #hour {
+            color: #ff8800 !important;
+      }
+
+      #minutes {
+            color: #ffffff !important;
+      }
+
+      #seconds {
+            color: #00ff33 !important;
+      }
+
+      #am-pm {
+            color: #00ffff !important;
+      }
+
+      .dot {
+            margin-left: 2rem;
+      }
+}
+
+@media screen and (max-width: 350px) {
+      .container {
+            width: 100%;
+      }
+
+      .container .clock .dot {
+           position: fixed;
+           top: 48%;
+      }
+}
